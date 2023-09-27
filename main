@@ -1,0 +1,6 @@
+ <button type="delete">Delete</button>
+
+bookingDetails.innerHTML = bookingInfo;
+        form.addEventListener("delete", function (event) {
+            event.preventDefault();
+        });
