@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <p><strong>Email:</strong> ${email}</p>
             <p><strong>Mobile Number:</strong> ${mobile}</p>
         `;
-
+       
         bookingDetails.innerHTML = bookingInfo;
         form.addEventListener("delete", function (event) {
             event.preventDefault();

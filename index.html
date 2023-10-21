@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Booking App</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- ... (previous code) ... -->
 </head>
 <body>
     <div class="container">
         <h1>Booking Form</h1>
         <form id="booking-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mobile">Mobile Number:</label>
-            <input type="tel" id="mobile" name="mobile" required>
-
+            <!-- ... (previous form fields) ... -->
             <button type="submit">Submit</button>
-            <button type="delete">Delete</button>
         </form>
 
         <div id="booking-details">
             <!-- Booking details will be displayed here -->
         </div>
+        <div id="edit-form" style="display: none;">
+            <h2>Edit Booking Details:</h2>
+            <form id="edit-booking-form">
+                <label for="edit-name">Name:</label>
+                <input type="text" id="edit-name" name="name" required>
+
+                <label for="edit-email">Email:</label>
+                <input type="email" id="edit-email" name="email" required>
+
+                <label for="edit-mobile">Mobile Number:</label>
+                <input type="tel" id="edit-mobile" name="mobile" required>
+
+                <button type="submit">Save</button>
+            </form>
+        </div>
+        <button id="edit-button">Edit</button>
     </div>
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
