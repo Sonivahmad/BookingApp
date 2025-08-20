@@ -2,13 +2,26 @@
 <html lang="en">
 <head>
     <!-- ... (previous code) ... -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Booking Form</h1>
         <form id="booking-form">
             <!-- ... (previous form fields) ... -->
             <button type="submit">Submit</button>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+    
+                <button type="submit">Submit</button>
+                <button type="delete">Delete</button>
         </form>
 
         <div id="booking-details">
@@ -32,6 +45,6 @@
         <button id="edit-button">Edit</button>
     </div>
 
-    <script src="app.js"></script>
+    <script src=""></script>
 </body>
 </html>
